@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <stack>
@@ -327,7 +327,7 @@ int main() {
             //cout << "\nПоиск кратчайшего пути от (" << startX << ", " << startY << ") до (" << endX << ", " << endY << ")...\n";
 
             // Поиск пути с помощью BFS
-            vector<pair<int, int>> path = findShortestPathInfo(startX, startY, endX, endY);
+            vector<pair<int, int>> path = bfs(startX, startY, endX, endY);
             auto end_time = std::chrono::high_resolution_clock::now(); // Конец замера времени
             if (empty(path)) {
                 cout << "Тест провален";
